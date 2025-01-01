@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  webhook-server:
+    # Use the local Dockerfile to build the Go application image
+    build:
+      context: .  # Use the current directory as the build context
+      dockerfile: Dockerfile  # Use the Dockerfile you provided (ensure it's named "Dockerfile")
+    ports:
+      - "8080:8080"  # Expose port 8080 to access the app
+    volumes:
+      - ./config.json:/app/config.json  # Mount the local config file into the container
+    environment:
+      - CONFIG_PATH=/app/config.json  # Optional: Add environment variables if needed
+    restart: always
