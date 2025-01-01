@@ -1,4 +1,4 @@
-# Grafana-SMS-Wrapper
+# Grafana-SMS-Wrapper - With Authentication
 This is a Webhook for Grafana SMS Wrapper
 # Overview
 
