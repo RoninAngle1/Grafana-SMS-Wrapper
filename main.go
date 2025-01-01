@@ -150,5 +150,3 @@ func sendMessage(config Config, message, phoneNumber string) error {
 
         return nil
 }
-
-root@nexus-dariche:/mnt#
